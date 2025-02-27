@@ -170,4 +170,12 @@ footer {
     .simple-grid, .complex-grid {
         grid-template-columns: 1fr;
     }
+    .simple-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+    }
+    .simple-grid .grid9 {
+        grid-column: span 1;
+    }
 }
