@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e1f;
+    color: #f5f5dc;
+    text-align: center;
+}
+
+/* Full-width header with background image */
+header {
+    background: url('/img/header-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inside {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Containers */
+.grid-container {
+    margin: 40px 0;
+}
+
+h2 {
+    color: #c5e1a5;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Simple Grid */
+.simple-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+}
+
+.simple-grid .grid-item {
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.simple-grid .grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Complex Grid */
+.complex-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.top-item, .bottom-item {
+    grid-column: span 3;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 120px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.center-item {
+    grid-row: span 3;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.grid-item {
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.2em;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.left-item, .right-item {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+/* Footer */
+footer {
+    background: #1b2612;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    width: 30%;
+}
+
+.footer-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #c5e1a5;
+}
+
+.footer-item p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .simple-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .complex-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-item, .bottom-item {
+        grid-column: 1 / -1;
+    }
+    .center-item {
+        grid-row: span 2;
+    }
+    .simple-grid .grid9 {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 800px) {
+    .simple-grid, .complex-grid {
+        grid-template-columns: 1fr;
+    }
+}
