@@ -10,7 +10,7 @@ body {
 
 /* Full-width header with background image */
 header {
-    background: url('/Sakura-Bites/img/header-bg.jpg') center/cover no-repeat;
+    background: url('https://cocole218.github.io/Sakura-Bites/img/header-bg.jpg') center/cover no-repeat;
     text-align: center;
     padding: 60px 20px;
     font-size: 2.5em;
